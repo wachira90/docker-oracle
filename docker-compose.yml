@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  oracle-db:
+    image: wachira90/oracle:xe-11g.11.2.0.2.0
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
+      - ORACLE_DISABLE_ASYNCH_IO=true
+    ports:
+      - 1521:1521
+      - 5500:5500
+      - 8088:8080
